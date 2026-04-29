@@ -114,7 +114,7 @@
   }
   .polaroid-caption {
     position: absolute; bottom: 6px; left: 0; right: 0; text-align: center;
-    font-family: 'Cormorant Garamond', serif; font-size: 9px; font-style: italic; color: var(--muted);
+    font-family: 'Cormorant Garamond', serif; font-size: 20px; font-style: italic; color: var(--muted);
   }
   .pol-inner { width: 100%; height: calc(100% - 28px); overflow: hidden; }
   .pol-inner img {
@@ -123,11 +123,13 @@
   }
 
   /* Mobile polaroid sizes */
-  .pol-1 { width: 88px; height: 106px; top: 7%;  left: 2%;  transform: rotate(-9deg); animation-delay: 1.2s; }
-  .pol-2 { width: 78px; height: 94px;  bottom: 18%; left: 1%;  transform: rotate(6deg);  animation-delay: 1.5s; }
-  .pol-3 { width: 84px; height: 102px; top: 7%;  right: 2%; transform: rotate(7deg);  animation-delay: 1.3s; }
-  .pol-4 { width: 74px; height: 90px;  bottom: 16%; right: 2%; transform: rotate(-5deg); animation-delay: 1.6s; }
-
+  .pol-1 { width: 150px; height: 165px; top: 7%;  left: 2%;  transform: rotate(-9deg); animation-delay: 1.2s; }
+  .pol-2 { width: 150px; height: 165px;  bottom: 18%; left: 1%;  transform: rotate(6deg);  animation-delay: 1.5s; }
+  .pol-3 { width: 150px; height: 165px; top: 7%;  right: 2%; transform: rotate(7deg);  animation-delay: 1.3s; }
+  .pol-4 { width: 150px; height: 165px;  bottom: 16%; right: 2%; transform: rotate(-5deg); animation-delay: 1.6s; }
+  .hidden-block {
+    display: none;
+  }
   @keyframes floatIn {
     from { opacity:0; transform: translateY(22px) rotate(var(--r,0deg)); }
     to   { opacity:1; transform: translateY(0) rotate(var(--r,0deg)); }
@@ -538,7 +540,7 @@
     </h1>
     <p class="hero-date">17 июля 2026</p>
     <div class="hero-divider"></div>
-    <p class="hero-sub">Мы рады пригласить вас разделить этот день</p>
+    <p class="hero-sub hidden-block">Мы рады пригласить вас разделить этот день</p>
   </div>
 </section>
 
